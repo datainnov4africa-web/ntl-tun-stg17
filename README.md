@@ -46,7 +46,7 @@ jupyter lab notebook.ipynb     # set CONFIG["ISO3"] and CONFIG["PROVIDER"], run 
 | Provider | `gee` |
 | Noise floor | 0.25 nW·cm⁻²·sr⁻¹ |
 | Urban-core threshold | 10.0 nW·cm⁻²·sr⁻¹ |
-| Top-coding | p99.9 = 108.8 |
+| Top-coding | p99.9 = 84.2 |
 | Administrative levels | ADM0 (1), ADM1 (24), ADM2 (264) |
 | Best Spearman ρ (validation) | 0.957 |
 
@@ -79,4 +79,4 @@ See `CITATION.cff`.
 
 ## Maintenance
 Maintainer / responsable : **National Statistical Office**
-Last run / dernière exécution : `20260921T094216Z`
+Last run / dernière exécution : `20260921T192724Z`

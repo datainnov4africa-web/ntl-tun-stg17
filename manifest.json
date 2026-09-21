@@ -1,6 +1,6 @@
 {
-  "run_id": "20260921T094216Z",
-  "generated_utc": "2026-09-21T09:47:23.866688+00:00",
+  "run_id": "20260921T192724Z",
+  "generated_utc": "2026-09-21T19:32:47.287107+00:00",
   "country": {
     "iso3": "TUN",
     "name": "Tunisia",
@@ -33,23 +33,108 @@
     "URBAN_CORE": 10.0,
     "TOPCODE_PCT": 99.9,
     "POP_LIT_MIN": 1.0,
-    "TARGET_SCALE_M": 500
+    "TARGET_SCALE_M": 500,
+    "USE_TOPCODED": true,
+    "MASK_FLARES": true,
+    "FLARE_BUFFER_PX": 2,
+    "NOISE_SENSITIVITY": [
+      0.15,
+      0.25,
+      0.5
+    ],
+    "CHANGE_MIN_BASE_PCT": 10,
+    "MONTHLY_MIN_COVERAGE": 0.8,
+    "ALLOW_MIXED_PRODUCTS": false,
+    "OFFICIAL_STATS_LEVEL": "ADM1",
+    "VALIDATION_MIN_N": 20
   },
-  "topcode_value": 108.7961654663086,
+  "ntl_products": {
+    "2015": "NOAA/VIIRS/DNB/ANNUAL_V21 · average_masked",
+    "2024": "NOAA/VIIRS/DNB/ANNUAL_V22 · average_masked"
+  },
+  "ntl_product_families": {
+    "2015": "EOG VNL V2 annuel (V2.1 / V2.2) · average_masked",
+    "2024": "EOG VNL V2 annuel (V2.1 / V2.2) · average_masked"
+  },
+  "population_years": {
+    "2015": 2015,
+    "2024": 2020
+  },
+  "growth_method": "croissance annuelle entre la médiane des années 2015–2017 et celle des années 2022–2024",
+  "trend_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "spatial_autocorrelation": {
+    "Croissance de la SoL (scénario E)": {
+      "I": 0.317039515412044,
+      "p": 0.002,
+      "n": 263,
+      "n_eff": 136,
+      "expected": -0.003816793893129771
+    },
+    "Résidus de l'élasticité (scénario A)": {
+      "I": 0.32750450677894427,
+      "p": 0.002,
+      "n": 263,
+      "n_eff": 133,
+      "expected": -0.003816793893129771
+    },
+    "Lumière par habitant (scénario D)": {
+      "I": 0.049895695228937144,
+      "p": 0.058,
+      "n": 263,
+      "n_eff": 238,
+      "expected": -0.003816793893129771
+    }
+  },
+  "values_used": "valeurs écrêtées au 99.9ᵉ percentile",
+  "topcode_value": 84.24366760253906,
+  "flare_masking": {
+    "masked_pixels": 2141,
+    "applied": true,
+    "sol_removed": {
+      "2015": {
+        "sol": 150173.640625,
+        "share_of_national": 0.2463956566783641
+      },
+      "2024": {
+        "sol": 133266.0,
+        "share_of_national": 0.15187237869973536
+      }
+    }
+  },
+  "monthly_quality": {
+    "dropped": 0,
+    "rescaled": 0,
+    "min_coverage": 0.8
+  },
+  "electrification_range": [
+    1741170.375,
+    1751628.5
+  ],
   "artefacts": {
     "2015": {
       "pixels": 1484397,
-      "share_below_noise_floor": 0.825623468654275,
-      "share_lit": 0.1743765313457249,
-      "share_urban_core": 0.00776476912847439,
-      "p50": 0.13883273303508759,
-      "p90": 0.38002991676330566,
-      "p99": 7.013155937194824,
-      "p9999": 146.29066467285156,
-      "max": 2873.63427734375,
-      "sol_share_top1pct_pixels": 0.5478988885879517,
+      "share_below_noise_floor": 0.8996063721497686,
+      "share_lit": 0.10039362785023144,
+      "share_urban_core": 0.008067248855932746,
+      "p50": 0.0,
+      "p90": 0.25285735726356506,
+      "p99": 7.42337703704834,
+      "p9999": 176.96926879882812,
+      "max": 4299.96142578125,
+      "sol_share_top1pct_pixels": 0.7368295788764954,
       "share_near_max": 6.736742259651562e-07,
-      "core_pop_per_pixel": 347.5111083984375
+      "core_pop_per_pixel": 279.7271423339844
     },
     "2024": {
       "pixels": 1484397,
@@ -69,84 +154,84 @@
   "flare_candidates": {
     "2015": [
       {
-        "px": 27,
-        "peak": 2873.6,
+        "px": 34,
+        "peak": 4300.0,
         "pop": 0,
         "pop_per_px": 0.0,
         "row": 1457,
         "col": 143
       },
       {
-        "px": 25,
-        "peak": 1848.6,
+        "px": 26,
+        "peak": 2127.5,
         "pop": 0,
         "pop_per_px": 0.0,
         "row": 1409,
         "col": 232
       },
       {
-        "px": 16,
-        "peak": 1767.8,
+        "px": 17,
+        "peak": 2044.7,
         "pop": 0,
         "pop_per_px": 0.0,
         "row": 1448,
         "col": 114
       },
       {
-        "px": 14,
-        "peak": 1405.4,
+        "px": 15,
+        "peak": 1597.9,
         "pop": 0,
         "pop_per_px": 0.0,
         "row": 1547,
         "col": 165
       },
       {
-        "px": 19,
-        "peak": 893.6,
-        "pop": 0,
-        "pop_per_px": 0.0,
-        "row": 1536,
-        "col": 129
-      },
-      {
         "px": 17,
-        "peak": 868.2,
+        "peak": 1064.7,
         "pop": 0,
         "pop_per_px": 0.0,
         "row": 1626,
         "col": 125
       },
       {
+        "px": 24,
+        "peak": 877.9,
+        "pop": 0,
+        "pop_per_px": 0.0,
+        "row": 1536,
+        "col": 129
+      },
+      {
         "px": 8,
-        "peak": 850.0,
-        "pop": 5,
-        "pop_per_px": 0.7,
+        "peak": 816.0,
+        "pop": 3,
+        "pop_per_px": 0.3,
         "row": 1335,
         "col": 419
       },
       {
-        "px": 7,
-        "peak": 455.3,
-        "pop": 14,
-        "pop_per_px": 2.0,
-        "row": 1371,
-        "col": 519
-      },
-      {
-        "px": 8,
-        "peak": 438.7,
-        "pop": 0,
-        "pop_per_px": 0.0,
-        "row": 1499,
-        "col": 113
-      },
-      {
-        "px": 9,
-        "peak": 339.7,
+        "px": 10,
+        "peak": 805.9,
         "pop": 0,
         "pop_per_px": 0.0,
         "row": 1421,
         "col": 130
+      },
+      {
+        "px": 8,
+        "peak": 632.2,
+        "pop": 0,
+        "pop_per_px": 0.0,
+        "row": 1286,
+        "col": 237
+      },
+      {
+        "px": 7,
+        "peak": 542.4,
+        "pop": 10,
+        "pop_per_px": 1.5,
+        "row": 1371,
+        "col": 519
       }
     ],
     "2024": [
@@ -233,7 +318,13 @@
     ]
   },
   "verdict": "experimental",
+  "verdict_basis": "Surface éclairée vs densité de population",
+  "verdict_reasons": [
+    "aucune statistique officielle indépendante : la corrélation avec la population est un contrôle de cohérence, pas une validation"
+  ],
+  "validation_level": "ADM1",
   "best_spearman": 0.957391304347826,
+  "spearman_ci_low": 0.9001702934268935,
   "software": {
     "python": "3.13.15",
     "numpy": "2.1.3",
